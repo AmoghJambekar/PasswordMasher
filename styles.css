@@ -1,0 +1,124 @@
+body {
+  background: linear-gradient(90deg, hsla(10, 89%, 70%, 1) 0%, hsla(350, 100%, 69%, 1) 100%);
+  font-family: "DM sans";
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Vertical top */
+  align-items: center; /* Horizontal center */
+  height: 100vh; /* Set the body height to the full viewport height */
+}
+
+#horizontal-center {
+  text-align: center;
+  z-index: 1;
+  margin-top: 30px; /* Add some margin at the top */
+}
+
+h1 {
+  font-family: "DM sans";
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: "DM sans";
+  color: rgb(255, 241, 241);
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.password-container {
+  position: relative;
+  display: inline-flex;
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 15px;
+  align-items: center;
+  margin-top: 20px; /* Add space between the two boxes */
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+  font-size: 18px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  font-family: "DM sans";
+  flex: 1;
+}
+
+.password-container .toggle-icon {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.password-container.show-password input[type="password"] {
+  -webkit-text-security: none;
+}
+
+.password-container.show-password .toggle-icon {
+  color: #007bff;
+}
+
+
+.mash-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: "DM sans";
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.mash-button:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+.password-rating,
+.time-to-crack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.password-rating span,
+.time-to-crack-container span {
+  font-family: "DM sans";
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#passwordStrengthBar {
+  width: 100%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#passwordStrengthBar::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #007bff;
+}
+
+.time-to-crack-container {
+  display: none; /* Hide the time-to-crack container initially */
+}
