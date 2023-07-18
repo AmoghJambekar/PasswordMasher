@@ -1,1 +1,1 @@
-who else hates bad passwords? now, let your password marinate in the masher na dcome out with something strong as steel 
+who else hates bad passwords? now, let your password marinate in the masher and come out with something strong as steel 
